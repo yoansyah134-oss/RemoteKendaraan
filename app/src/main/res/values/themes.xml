@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Ubah parent dari android:Theme.Material ke Theme.AppCompat -->
+    <style name="Theme.VehicleSafety" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Anda bisa menambahkan kustomisasi warna di sini agar tampilan lebih menarik -->
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#1976D2</item>
+        <item name="colorAccent">#FF4081</item>
+    </style>
+</resources>

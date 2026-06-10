@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://tools.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remote"
+                android:textColor="#000666"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kendaraan"
+                android:textColor="#191C1D"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#EDEEEF"
+            app:cardElevation="0dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:weightSum="2"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <View
+                        android:id="@+id/ledOn"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ON"
+                        android:textColor="#454652"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="32dp"
+                    android:background="#C6C5D4"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <View
+                        android:id="@+id/ledOff"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="#BA1A1A" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OFF"
+                        android:textColor="#454652"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSecurityStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#D32F2F"
+            app:cardElevation="2dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keamanan saat ini"
+                    android:textColor="#FFFFFF"
+                    android:alpha="0.8"
+                    android:textSize="12sp"
+                    android:letterSpacing="0.1" />
+
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terkunci"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_marginBottom="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:layout_margin="4dp"
+                app:cardElevation="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kontrol Kendaraan"
+                        android:textColor="#000666"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"/>
+                    <Button
+                        android:id="@+id/btnOnScan"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="ON (SCAN)"
+                        android:textColor="#388E3C"
+                        android:backgroundTint="#FFFFFF"
+                        android:strokeColor="#388E3C"
+                        android:strokeWidth="1"
+                        android:layout_marginBottom="8dp" />
+                    <Button
+                        android:id="@+id/btnOffTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="OFF TOTAL"
+                        android:textColor="#D32F2F"
+                        android:backgroundTint="#FFFFFF"
+                        android:strokeColor="#D32F2F"
+                        android:strokeWidth="1" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:layout_margin="4dp"
+                app:cardElevation="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kontrol Buzzer"
+                        android:textColor="#000666"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"/>
+                    <Button
+                        android:id="@+id/btnBuzzerOn"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="BUZZER ON"
+                        android:textColor="#FFFFFF"
+                        android:backgroundTint="#F57C00"
+                        android:layout_marginBottom="8dp" />
+                    <Button
+                        android:id="@+id/btnMute"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="MUTE"
+                        android:textColor="#FFFFFF"
+                        android:backgroundTint="#757575" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="1dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fingerprint Manager"
+                    android:textColor="#000666"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <Button
+                        android:id="@+id/btnDaftarJari"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="DAFTAR JARI"
+                        android:textColor="#FFFFFF"
+                        android:backgroundTint="#1976D2"
+                        android:layout_marginEnd="4dp" />
+                    <Button
+                        android:id="@+id/btnKelolaJari"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="KELOLA JARI"
+                        android:textColor="#FFFFFF"
+                        android:backgroundTint="#B71C1C"
+                        android:layout_marginStart="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="1dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update WiFi ESP32"
+                    android:textColor="#000666"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp"/>
+
+                <EditText
+                    android:id="@+id/etSsid"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#EDEEEF"
+                    android:textColor="#191C1D"
+                    android:paddingHorizontal="12dp"
+                    android:hint="Nama WiFi (SSID) Baru"
+                    android:textSize="14sp"
+                    android:inputType="text"
+                    android:layout_marginBottom="12dp"/>
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#EDEEEF"
+                    android:textColor="#191C1D"
+                    android:paddingHorizontal="12dp"
+                    android:hint="Password Baru"
+                    android:textSize="14sp"
+                    android:inputType="textPassword"
+                    android:layout_marginBottom="16dp"/>
+
+                <Button
+                    android:id="@+id/btnRestartWifi"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="SIMPAN &amp; RESTART WIFI"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#37474F"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
