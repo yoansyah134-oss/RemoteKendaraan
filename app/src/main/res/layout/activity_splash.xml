@@ -71,6 +71,7 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center"
                     android:src="@drawable/ic_car"
+                    android:contentDescription="@string/desc_ic_car"
                     app:tint="#BDC2FF" />
             </FrameLayout>
         </androidx.cardview.widget.CardView>
@@ -78,7 +79,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="REMOTE KENDARAAN"
+            android:text="@string/remote_kendaraan"
             android:textColor="#FFFFFF"
             android:textSize="32sp"
             android:textStyle="bold"
@@ -89,7 +90,7 @@
         <TextView
             android:layout_width="260dp"
             android:layout_height="wrap_content"
-            android:text="menghubungkan anda dan kendaraan anda dengan aman"
+            android:text="@string/subtitle_splash"
             android:textColor="#CCBDC2FF"
             android:textSize="16sp"
             android:layout_marginTop="8dp"
@@ -117,7 +118,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MENGINISIALISASI..."
+            android:text="@string/menginisialisasi"
             android:textColor="#99BDC2FF"
             android:textSize="12sp"
             android:textStyle="bold"

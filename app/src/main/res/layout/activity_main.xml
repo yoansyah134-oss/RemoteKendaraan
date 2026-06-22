@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://tools.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F8F9FA"
     android:fillViewport="true"
-    android:fitsSystemWindows="true" tools:context=".MainActivity">
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,7 +25,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Remote"
+                android:text="@string/remote"
                 android:textColor="#000666"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -32,7 +33,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kendaraan"
+                android:text="@string/kendaraan"
                 android:textColor="#191C1D"
                 android:textSize="24sp" />
         </LinearLayout>
@@ -69,17 +70,17 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ON"
+                        android:text="@string/label_on"
                         android:textColor="#454652"
                         android:textSize="12sp"
                         android:textStyle="bold"
-                        android:layout_marginTop="4dp"/>
+                        android:layout_marginTop="4dp" />
                 </LinearLayout>
 
                 <View
                     android:layout_width="1dp"
                     android:layout_height="32dp"
-                    android:background="#C6C5D4"/>
+                    android:background="#C6C5D4" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -97,11 +98,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="OFF"
+                        android:text="@string/label_off"
                         android:textColor="#454652"
                         android:textSize="12sp"
                         android:textStyle="bold"
-                        android:layout_marginTop="4dp"/>
+                        android:layout_marginTop="4dp" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -124,7 +125,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Keamanan saat ini"
+                    android:text="@string/keamanan_saat_ini"
                     android:textColor="#FFFFFF"
                     android:alpha="0.8"
                     android:textSize="12sp"
@@ -134,7 +135,7 @@
                     android:id="@+id/txtStatus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Terkunci"
+                    android:text="@string/terkunci"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp"
                     android:textStyle="bold"
@@ -166,15 +167,15 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Kontrol Kendaraan"
+                        android:text="@string/kontrol_kendaraan"
                         android:textColor="#000666"
                         android:textStyle="bold"
-                        android:layout_marginBottom="12dp"/>
+                        android:layout_marginBottom="12dp" />
                     <Button
                         android:id="@+id/btnOnScan"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:text="ON (SCAN)"
+                        android:text="@string/on_scan"
                         android:textColor="#388E3C"
                         android:backgroundTint="#FFFFFF"
                         android:strokeColor="#388E3C"
@@ -184,7 +185,7 @@
                         android:id="@+id/btnOffTotal"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:text="OFF TOTAL"
+                        android:text="@string/off_total"
                         android:textColor="#D32F2F"
                         android:backgroundTint="#FFFFFF"
                         android:strokeColor="#D32F2F"
@@ -208,15 +209,15 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Kontrol Buzzer"
+                        android:text="@string/kontrol_buzzer"
                         android:textColor="#000666"
                         android:textStyle="bold"
-                        android:layout_marginBottom="12dp"/>
+                        android:layout_marginBottom="12dp" />
                     <Button
                         android:id="@+id/btnBuzzerOn"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:text="BUZZER ON"
+                        android:text="@string/buzzer_on"
                         android:textColor="#FFFFFF"
                         android:backgroundTint="#F57C00"
                         android:layout_marginBottom="8dp" />
@@ -224,7 +225,7 @@
                         android:id="@+id/btnMute"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:text="MUTE"
+                        android:text="@string/mute"
                         android:textColor="#FFFFFF"
                         android:backgroundTint="#757575" />
                 </LinearLayout>
@@ -246,21 +247,22 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fingerprint Manager"
+                    android:text="@string/fingerprint_manager"
                     android:textColor="#000666"
                     android:textStyle="bold"
-                    android:layout_marginBottom="12dp"/>
+                    android:layout_marginBottom="12dp" />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:weightSum="2">
+                    android:weightSum="2"
+                    tools:ignore="ButtonStyle">
                     <Button
                         android:id="@+id/btnDaftarJari"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_weight="1"
-                        android:text="DAFTAR JARI"
+                        android:text="@string/daftar_jari"
                         android:textColor="#FFFFFF"
                         android:backgroundTint="#1976D2"
                         android:layout_marginEnd="4dp" />
@@ -269,7 +271,7 @@
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_weight="1"
-                        android:text="KELOLA JARI"
+                        android:text="@string/kelola_jari"
                         android:textColor="#FFFFFF"
                         android:backgroundTint="#B71C1C"
                         android:layout_marginStart="4dp" />
@@ -293,10 +295,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Update WiFi ESP32"
+                    android:text="@string/update_wifi_esp32"
                     android:textColor="#000666"
                     android:textStyle="bold"
-                    android:layout_marginBottom="16dp"/>
+                    android:layout_marginBottom="16dp" />
 
                 <EditText
                     android:id="@+id/etSsid"
@@ -305,10 +307,11 @@
                     android:background="#EDEEEF"
                     android:textColor="#191C1D"
                     android:paddingHorizontal="12dp"
-                    android:hint="Nama WiFi (SSID) Baru"
+                    android:hint="@string/hint_ssid"
                     android:textSize="14sp"
                     android:inputType="text"
-                    android:layout_marginBottom="12dp"/>
+                    android:autofillHints="username"
+                    android:layout_marginBottom="12dp" />
 
                 <EditText
                     android:id="@+id/etPassword"
@@ -317,16 +320,17 @@
                     android:background="#EDEEEF"
                     android:textColor="#191C1D"
                     android:paddingHorizontal="12dp"
-                    android:hint="Password Baru"
+                    android:hint="@string/hint_password"
                     android:textSize="14sp"
                     android:inputType="textPassword"
-                    android:layout_marginBottom="16dp"/>
+                    android:autofillHints="password"
+                    android:layout_marginBottom="16dp" />
 
                 <Button
                     android:id="@+id/btnRestartWifi"
                     android:layout_width="match_parent"
                     android:layout_height="52dp"
-                    android:text="SIMPAN &amp; RESTART WIFI"
+                    android:text="@string/simpan_restart_wifi"
                     android:textColor="#FFFFFF"
                     android:backgroundTint="#37474F"
                     android:textStyle="bold" />
