@@ -40,7 +40,7 @@ android {
 }
 
 dependencies {
-    // Menggunakan versi spesifik yang stabil untuk API 35 (Menghindari error API 36)
+    // koneksi API 35
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
     implementation("androidx.activity:activity-compose:1.9.3")
@@ -56,7 +56,7 @@ dependencies {
     // Library Volley untuk koneksi ESP32
     implementation("com.android.volley:volley:1.2.1")
 
-    // Tambahkan baris ini untuk memperbaiki error activity_main.xml kamu:
+
     implementation("androidx.cardview:cardview:1.0.0")
 
     // Unit Testing

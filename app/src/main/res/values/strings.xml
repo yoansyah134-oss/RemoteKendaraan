@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">Remote Kendaraan</string>
+    <string name="status_terbuka">Terbuka</string>
+    <string name="status_terkunci">Terkunci</string>
+    <string name="status_ready_to_scan">Standby (Ready to Scan)</string>
+    <string name="remote">Remote</string>
+    <string name="kendaraan">Kendaraan</string>
+    <string name="label_on">ON</string>
+    <string name="label_off">OFF</string>
+    <string name="keamanan_saat_ini">Keamanan saat ini</string>
+    <string name="terkunci">Terkunci</string>
+    <string name="kontrol_kendaraan">Kontrol Kendaraan</string>
+    <string name="on_scan">ON (SCAN)</string>
+    <string name="off_total">OFF TOTAL</string>
+    <string name="kontrol_buzzer">Kontrol Buzzer</string>
+    <string name="buzzer_on">BUZZER ON</string>
+    <string name="mute">MUTE</string>
+    <string name="fingerprint_manager">Fingerprint Manager</string>
+    <string name="daftar_jari">DAFTAR JARI</string>
+    <string name="kelola_jari">KELOLA JARI</string>
+    <string name="update_wifi_esp32">Update WiFi ESP32</string>
+    <string name="hint_ssid">Nama WiFi (SSID) Baru</string>
+    <string name="hint_password">Password Baru</string>
+    <string name="simpan_restart_wifi">SIMPAN &amp; RESTART WIFI</string>
+    <string name="desc_ic_car">Ikon Kendaraan</string>
+    <string name="remote_kendaraan">REMOTE KENDARAAN</string>
+    <string name="subtitle_splash">menghubungkan anda dan kendaraan anda dengan aman</string>
+    <string name="menginisialisasi">MENGINISIALISASI...</string>
 </resources>
